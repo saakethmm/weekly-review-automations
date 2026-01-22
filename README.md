@@ -1,27 +1,5 @@
 # Weekly Review Automation
 
-new change: Chatting with Claude about my updates and then confirm a single change across everything. Then no need to keep revisiting each one and making sure it's been updated. Also get ideas across in one flow. test on Sat. 
-i.e., adapt so I can enter 'reflection-mode', basically replaces Steps 3, 4, 5 in PACT decision framework.
-
-TODO: basically go through the UI of how I want it to respond (pausing after each PACT, confirming changes, etc.)
-
-TODO: also add UI of how things should look in sheets vs. notion (in description, etc.) and ticktick (example tasks also!)
-
-TODO: also explain each step as it proceeds
-
-ticktick:
-TODO: ask it to default tag and add to appropriate project
-TODO: when I say do it like this, tell it what attributes to copy
-
-sheets:
-TODO: add spreadsheet id, default to the only one in the folder
-TODO: clear instructions for each part (hiding/adding new column - paying attention to cadence)
-
-then make everything automatic, just one final ask before changes made across all
-
-should make deciding new pacts, tracking as simple as possible
-
-
 
 ## Project Overview
 
