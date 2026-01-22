@@ -1,1 +1,5 @@
 TODOS.md
+.env
+.token-oauth
+auth_file.py
+pyrightconfig.json
