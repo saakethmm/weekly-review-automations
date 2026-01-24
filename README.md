@@ -118,12 +118,6 @@ See `connection_instructions.md`.
 
 A lot of the ideas here are based on the book, but more generally on a design philosophy of building tools that extends the human interface with technology using a more natural medium, while still allowing the core reflections to be made by the individual. See the blog post for more details.
 
-1. **Reflect naturally, sync automatically**: Write your thoughts in Apple Notes where you already reflect. Paste once, Claude handles propagating changes across all platforms through conversational AI.
-2. **Preserve > Generate**: Keep existing content, only change what's needed. TickTick task structure and motivational text stays intact.
-3. **Natural language → Structured data**: Claude interprets your free-form reflections and translates them into structured updates across Notion (database), TickTick (tasks), and Sheets (tracking). No manual data entry.
-4. **Safety first**: Claude shows what it's changing before applying. You can iterate and refine in real-time.
-5. **Minimal effort**: Weekly reviews should be ≤1 hour of meaningful reflection, not frustrating cross-platform data entry.
-
 ## Potential Enhancements
 
 - **Completion analytics**: "Show me my PACT completion trends over the last month"
