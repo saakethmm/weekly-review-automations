@@ -4,11 +4,13 @@
 
 This project automates weekly PACT (Purposeful, Actionable, Continuous, Trackable) reviews. User reflects interactively with Claude and Claude provides advice on inputs and accordingly syncs changes across three platforms via MCP:
 
-- **Notion**: Structured PACT database
+- **Notion**: Structured PACT database/table
 - **TickTick**: Daily task interface with rich descriptions
-- **Google Sheets**: Completion tracking (1/0/-1 values)
+- **Google Sheets**: Known as PACT Tracker with completion tracking (1/0/-1 values)
 
 ## Interaction Pattern
+
+Do not search for the Notion or Google Sheets pages, both IDs are already provided.
 
 ### Step-by-Step Confirmation
 When processing PACT updates, follow this conversational pattern:
@@ -63,24 +65,26 @@ Task Name: [PACT Name] ([Action summary])
 
 ---
 ## Guidelines
-[Instructions for completing the task]
-[Motivational context]
+(optional) [Instructions for completing the task]
+(optional) [Motivational context]
 ```
 
 ### When Updating TickTick Tasks
 - **Preserve structure**: Keep `## Tasks` and `## Guidelines` sections intact
 - **Preserve motivational text**: Don't remove encouragement/context paragraphs
 - **Only modify what changed**: If action changed, update action. Don't rewrite everything.
-- **Default project**: [TODO: specify default project name]
-- **Default tag**: [TODO: specify default tag]
+- **Project**: Preserve existing project
+- **Tag**: Preserve existing tags
 
 ### When Creating New TickTick Tasks
-- Match format of existing tasks (reference examples/)
+- Match format of existing tasks based on user input (reference examples)
 - Copy these attributes from similar existing tasks:
   - Repeating frequency pattern
   - Description structure
   - Checkbox format
   - Guidelines section style
+- **Project**: Assign based on logical fit
+- **Tag**: Assign based on logical fit
 
 ## Google Sheets Conventions
 
@@ -99,19 +103,21 @@ Task Name: [PACT Name] ([Action summary])
 - **Never modify**: Column A (dates), any formula columns
 
 ### Spreadsheet Reference
-- **Spreadsheet ID**: [TODO: add ID]
-- **Sheet name**: [TODO: add name, or default to only sheet in folder]
+- **Spreadsheet ID**: 1nqP5-ISlVAMkjgtS_1LAPlfkqoDw5APfgLY1wIBI3Ds
+- **Sheet name**: PACT Tracker
 
 ## Notion Field Mapping
 
 When updating Notion PACT records:
 - **name**: PACT identifier
 - **action**: What to do (brief)
-- **frequency**: How often (e.g., "daily", "3x/week", "daily (workdays)")
-- **description**: Additional context
+- **frequency**: How often (e.g., "Daily", "Weekly", "Daily (workdays)", "Biweekly")
 - **duration**: Trial length (e.g., "2 weeks", "1 month")
 - **next_revisit_date**: Calculate as: prior Sunday + duration
-- **status**: "Active" or "Inactive"
+- **status**: "Active" or "Inactive" (any paused PACT is made inactive, any new PACT defaults to Active)
+
+### Notion Reference
+- **Page ID**: 44f097e8158a4dcc8f24c5dc48082ad7
 
 ## Frequency Mappings
 
